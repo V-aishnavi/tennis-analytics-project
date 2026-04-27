@@ -1,7 +1,7 @@
 import requests
 import pandas as pd
 
-API_KEY = "wJU8Lwraqz1Y3xaAvcuw9OIkEX8dAReatoHtWMZe"
+API_KEY = "Use_your_API_Key"
 
 def fetch_complexes_data():
     """Fetches complexes and venues data from Sportradar API"""
