@@ -349,17 +349,21 @@ The interactive dashboard includes:
 
 ## Files in this Repository
 
+## Files in this Repository
+
 | File Name | Description |
 |-----------|-------------|
-| extract_venues.py | Extracts venue and complex data from Sportradar API |
-| final_setup.py | Creates database and imports all CSV data |
-| app.py | Streamlit dashboard application |
-| categories.csv | Extracted category data (18 rows) |
-| competitions.csv | Extracted competition data (6,506 rows) |
-| complexes.csv | Extracted complex data (765 rows) |
-| venues.csv | Extracted venue data (3,928 rows) |
-| requirements.txt | Python package dependencies |
-| README.md | This documentation file |
+| data_extraction.py | Extracts competition data from Sportradar API. Fetches 6,506 competitions and 18 categories. Saves to categories.csv and competitions.csv |
+| extract_venues.py | Extracts venue and complex data from Sportradar API. Fetches 765 complexes and 3,928 venues. Saves to complexes.csv and venues.csv |
+| extract_rankings.py | Attempts to extract doubles rankings from Sportradar API (API limitations - sample data created separately) |
+| final_setup.py | Creates SQLite database with all 6 tables. Imports all CSV files. Creates sample ranking data. Runs initial test queries |
+| setup_database.py | Alternative database setup script. Creates tables and imports CSV data with error handling for null values |
+| app.py | Streamlit dashboard application. Provides interactive interface for competition, venue, and ranking analysis |
+| requirements.txt | Python package dependencies needed to run the project: streamlit, pandas, requests |
+| categories.csv | Extracted category data. Contains 18 rows with category_id and category_name |
+| competitions.csv | Extracted competition data. Contains 6,506 rows with competition details including type, gender, and category_id |
+| complexes.csv | Extracted complex data. Contains 765 rows with complex_id and complex_name |
+| venues.csv | Extracted venue data. Contains 3,928 rows with venue details including city, country, and timezone |
 
 ---
 
