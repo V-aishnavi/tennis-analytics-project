@@ -349,8 +349,6 @@ The interactive dashboard includes:
 
 ## Files in this Repository
 
-## Files in this Repository
-
 | File Name | Description |
 |-----------|-------------|
 | data_extraction.py | Extracts competition data from Sportradar API. Fetches 6,506 competitions and 18 categories. Saves to categories.csv and competitions.csv |
